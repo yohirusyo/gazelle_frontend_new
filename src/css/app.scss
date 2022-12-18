@@ -1,0 +1,165 @@
+// app global css in SCSS form
+
+$radius-multiplier: 1.5;
+
+.border-none {
+  border-radius: 0;
+}
+
+.border-xs {
+  border-radius: $space-base * $radius-multiplier * 0.25;
+  overflow: hidden;
+}
+
+.border-sm {
+  border-radius: $space-base * $radius-multiplier * 0.5;
+  overflow: hidden;
+}
+
+.border-md {
+  border-radius: $space-base * $radius-multiplier;
+  overflow: hidden;
+}
+
+.border-bottom-md {
+  border-bottom-left-radius: $space-base * $radius-multiplier;
+  border-bottom-right-radius: $space-base * $radius-multiplier;
+  overflow: hidden;
+}
+
+.border-lg {
+  border-radius: $space-base * $radius-multiplier * 1.5;
+  overflow: hidden;
+}
+
+.border-xl {
+  border-radius: $space-base * $radius-multiplier * 3;
+  overflow: hidden;
+}
+
+.shadow-white {
+  box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.05);
+}
+
+.shadow-white-inset {
+  box-shadow: inset 0 8px 25px 0 rgba(128, 124, 124, 0.05);
+}
+
+.datepicker {
+  border: none !important;
+  background: transparent !important;
+}
+
+.datepicker-menu {
+  overflow: hidden !important;
+  box-shadow: inset 0 8px 25px 0 rgba(0, 0, 0, 0.05) !important;
+  border-radius: $space-base * $radius-multiplier  !important;
+}
+
+.dp__selection_preview {
+  width: 0px !important;
+  display: none !important;
+}
+
+.dp__action_buttons {
+  display: flex !important;
+  width: 100% !important;
+  justify-content: space-evenly !important;
+}
+
+.dp__cancel {
+  color: lightgray !important;
+}
+
+.q-tab {
+  padding: 0 4px !important;
+}
+
+.q-tab-panel {
+  padding: 0 !important;
+}
+
+@font-face {
+  font-family: RoadNumbers2;
+  /* Имя шрифта */
+  src: url(RoadNumbers2.0.otf);
+  /* Путь к файлу со шрифтом */
+}
+
+.pre {
+  white-space: pre-wrap;
+}
+
+.my-sticky-header-table {
+  /* height or max-height is important */
+  height: 310px;
+  /* this is when the loading indicator appears */
+}
+
+.my-sticky-header-table thead tr th {
+  position: sticky;
+  z-index: 1;
+}
+
+.my-sticky-header-table thead tr:first-child th {
+  top: 0;
+}
+
+.my-sticky-header-table.q-table--loading thead tr:last-child th {
+  /* height of all previous header rows */
+  top: 48px;
+}
+
+.q-panel.scroll {
+  flex: 10000 1 0% !important;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.menu-scroll-area .q-table__middle.q-virtual-scroll.q-virtual-scroll--vertical.scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.menu-scroll-area .q-table td:last-child {
+  padding-right: 0;
+}
+
+.menu-scroll-area .q-table--dense .q-table th:first-child,
+.menu-scroll-area .q-table--dense .q-table td:first-child {
+  padding-left: 0;
+}
+
+.menu-scroll-area .q-table--dense .q-table th,
+.menu-scroll-area .q-table--dense .q-table td {
+  padding: 0;
+}
+
+// .q-table__middle.q-virtual-scroll.q-virtual-scroll--vertical.scroll::-webkit-scrollbar {
+//   display: none;
+// }
+
+// .q-table td:last-child {
+//   padding-right: 0;
+// }
+
+// .q-table--dense .q-table th:first-child,
+// .q-table--dense .q-table td:first-child {
+//   padding-left: 0;
+// }
+
+// .q-table--dense .q-table th,
+// .q-table--dense .q-table td {
+//   padding: 0;
+// }
